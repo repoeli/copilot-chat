@@ -1,0 +1,289 @@
+<!--copilot-chat/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company - Welcome</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <div class="hero-text">
+                <h1 class="mb-3">Welcome to Your Company</h1>
+                <p class="mb-4 mx-auto" style="max-width: 600px;">A brief tagline that summarizes your value proposition</p>
+                <a href="#contact" class="btn btn-primary px-4 py-2">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with CSS-only Auto-sliding -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5">Our Features</h2>
+            
+            <!-- Improved slider container structure -->
+            <div class="slider-container">
+                <div class="slider-controls">
+                    <!-- Radio buttons for controlling slides -->
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    
+                    <!-- Improved navigation buttons with better positioning -->
+                    <div class="slider-navigation">
+                        <!-- First slide navigation -->
+                        <label for="slide3" class="prev slide1-prev"><i class="fas fa-chevron-left"></i></label>
+                        <label for="slide2" class="next slide1-next"><i class="fas fa-chevron-right"></i></label>
+                        
+                        <!-- Second slide navigation -->
+                        <label for="slide1" class="prev slide2-prev"><i class="fas fa-chevron-left"></i></label>
+                        <label for="slide3" class="next slide2-next"><i class="fas fa-chevron-right"></i></label>
+                        
+                        <!-- Third slide navigation -->
+                        <label for="slide2" class="prev slide3-prev"><i class="fas fa-chevron-left"></i></label>
+                        <label for="slide1" class="next slide3-next"><i class="fas fa-chevron-right"></i></label>
+                    </div>
+                    
+                    <!-- Slider content -->
+                    <div class="slider-wrapper">
+                        <div class="slides">
+                            <div class="slide" id="slide-1">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                                    <h3 class="mb-3">Responsive Design</h3>
+                                    <p class="mb-0">Looks great on any device, from desktop to mobile.</p>
+                                </div>
+                            </div>
+                            <div class="slide" id="slide-2">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                                    <h3 class="mb-3">Fast Performance</h3>
+                                    <p class="mb-0">Optimized code ensures your site loads quickly.</p>
+                                </div>
+                            </div>
+                            <div class="slide" id="slide-3">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                                    <h3 class="mb-3">Secure</h3>
+                                    <p class="mb-0">Built with security best practices in mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide indicators -->
+                    <div class="slider-indicators">
+                        <label for="slide1" class="indicator"></label>
+                        <label for="slide2" class="indicator"></label>
+                        <label for="slide3" class="indicator"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5">About Us</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at justo vel libero fermentum tincidunt. Proin eget magna vel ante luctus consectetur in sit amet dolor.</p>
+                        <p>Vivamus ac tortor at ipsum faucibus commodo nec id nulla. Sed convallis, eros id hendrerit interdum, nunc diam lobortis ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center">
+                        <img src="https://placehold.co/600x400" alt="About Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-code fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Web Development</h4>
+                            <p class="card-text">Custom websites built to your specifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Mobile Apps</h4>
+                            <p class="card-text">Native apps for iOS and Android platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-paint-brush fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">UI/UX Design</h4>
+                            <p class="card-text">Beautiful interfaces with great user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-chart-line fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Consulting</h4>
+                            <p class="card-text">Expert advice to optimize your digital presence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-5">Contact Us</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary py-3 px-4">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-primary text-white border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 fw-bold">Get in Touch</h3>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <i class="fas fa-envelope fa-fw fa-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">info@yourcompany.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <i class="fas fa-phone fa-fw fa-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-map-marker-alt fa-fw fa-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">123 Business St, City, Country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
